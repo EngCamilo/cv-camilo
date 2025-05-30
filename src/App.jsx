@@ -9,10 +9,14 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 font-sans">
       <Header />
-      <main className="max-w-5xl mx-auto px-6 py-10">
-        <Education />
-        <Experience />
-        <Skills />
+      <main className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="col-span-1 space-y-8">
+          <Education />
+          <Experience />
+        </section>
+        <section className="col-span-1">
+          <Skills />
+        </section>
       </main>
       <Footer />
     </div>
