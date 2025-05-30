@@ -7,9 +7,9 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-gray-100 text-gray-900 font-sans">
       <Header />
-      <main className="container mx-auto px-4">
+      <main className="cmax-w-5xl mx-auto px-6 py-10">
         <Education />
         <Experience />
         <Skills />
