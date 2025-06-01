@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'violet-per1' : '#40396B',
+        'violet-per2' : '#301752',
+        'violet-per3' : '#261240',
+      }
+    },
   },
   plugins: [],
 };
