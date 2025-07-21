@@ -13,7 +13,7 @@ Poseo habilidades prácticas en desarrollo frontend y backend, manejo de herrami
             <h2>Perfil</h2>
             <p
               className={`text-justify whitespace-pre-line ${
-                mostrarTodo ? '' : 'line-clamp-5 md:line-clamp-none'
+                showFull ? '' : 'line-clamp-5 md:line-clamp-none'
               }`}
             >
               {texto}
