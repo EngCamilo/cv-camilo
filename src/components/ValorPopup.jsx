@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Star } from 'lucide-react';
 
 export default function ValorPopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +9,12 @@ Mi experiencia en dirección de equipos, sumada a mi formación en Ingeniería d
 
   return (
     <div className="my-8 text-center">
-      {/* Botón para abrir el popup */}
+      {/* Botón con estilo más integrado al CV e ícono */}
       <button
         onClick={() => setIsOpen(true)}
-        className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-lg shadow-lg transition"
+        className="inline-flex items-center justify-center gap-2 px-5 py-2 border border-gray-700 text-gray-800 rounded-full shadow-sm hover:bg-gray-100 transition-colors duration-300"
       >
+        <Star className="w-4 h-4 text-yellow-500" />
         ¿Por qué contratarme?
       </button>
 
