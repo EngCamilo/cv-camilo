@@ -8,7 +8,6 @@ export default function ValorPopup() {
 
   return (
     <div className="my-8 text-center">
-      {/* Botón con estilo más integrado al CV, ícono y animación */}
       <button
         onClick={() => setIsOpen(true)}
         className="inline-flex items-center justify-center gap-2 px-5 py-2 border border-gray-700 text-gray-800 font-semibold rounded-full shadow-sm hover:bg-gray-100 transform hover:scale-105 transition duration-300 animate-pulse"
