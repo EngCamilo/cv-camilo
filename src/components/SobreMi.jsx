@@ -7,9 +7,9 @@ export default function SobreMi() {
     <section className="w-full my-10 bg-gray-200 p-8 rounded-xl flex flex-wrap gap-8 xl:flex-nowrap">
         <div className="bg-white shadow-md p-6 rounded-lg basis-full xl:basis-2/3">
           <h2>{t('perfil_titulo')}</h2>
-          <p className="mb-3">{t('perfil_parrafo1')}</p>
-          <p className="mb-3">{t('perfil_parrafo2')}</p>
-          <p className="mb-3">{t('perfil_parrafo3')}</p>
+          <p className="mb-3 text-sm md:text-base">{t('perfil_parrafo1')}</p>
+          <p className="mb-3 text-sm md:text-base">{t('perfil_parrafo2')}</p>
+          <p className="mb-3 text-sm md:text-base">{t('perfil_parrafo3')}</p>
         </div>
 
         <div className="bg-white shadow-md p-6 rounded-lg basis-full xl:basis-1/3 text-xs">
