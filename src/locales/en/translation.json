@@ -1,0 +1,46 @@
+{
+  "cerrar": "Close",
+  "titulo_profesional": "Graphic Designer / Software Engineer",
+  "presente": "Present",
+  "meses": "Months",
+  
+  "perfil_titulo": "Profile",
+  "perfil_parrafo1": "Professional in transition to the tech sector, with over 10 years of experience in editorial design and digital project management in the academic field. Currently CEO of a digital editorial production agency, where I have led the development of custom technological solutions for higher education institutions.",
+  "perfil_parrafo2": "I am currently studying Software Engineering (7th semester), a program that complements my background with strong foundations in programming, software architecture, and web development. This combination allows me to approach projects with a holistic vision that unites user experience, functional design, and technical robustness.",
+  "perfil_parrafo3": "I have practical skills in both frontend and backend development, working with modern tools like React, TailwindCSS, Git, and agile methodologies. I am eager to join development teams where I can contribute my leadership, creative thinking, and focus on building scalable, high-value technology solutions.",
+  
+  "informacion_personal": "Personal Information",
+  "documento": "ID Document",
+  "nacimiento": "Date of Birth",
+  "fecha_nacimiento": "December 16, 1991",
+  "lugar": "Place of Birth",
+  "estado_civil": "Marital Status",
+  "estado_civil_valor": "Married",
+  "direccion": "Address",
+  "telefonos": "Phone Numbers",
+  "email": "Email",
+  
+  "porque_elegirme": "Why choose me?",
+  "oferta_valorTit": "My Value Proposition",
+  "oferta_valor": "With over 10 years of experience leading editorial and technological projects, I bring a strategic vision that combines creativity, management, and software development. My role as CEO of a digital agency in the academic sector has allowed me to transform complex ideas into innovative solutions with real impact.\n\nCurrently studying Software Engineering, I’m strengthening my profile toward tech development with solid knowledge in programming, architecture, and agile methodologies. I’m passionate about creating high-value digital products, exploring new trends, and constantly learning to stay ahead. If you're looking for a professional who connects design, technology, and innovation with a strong results-oriented mindset, I can bring a meaningful difference to your team.",
+  
+  "educacion": "Education",
+  "ingenieria_software": "Software Engineering",
+  "comunicacion_grafica": "Graphic Communication",
+  "estudios_secundarios": "High School",
+  "certificaciones": "Certifications",
+  
+  "experiencia": "Experience",
+  "descripcion_ceo": "Project management for higher education institutions. Graphic design, web and multimedia design, eBook programming (XHTML, CSS).",
+  "disenador_grafico_editorial": "Graphic-Editorial Designer",
+  "descripcion_editorial": "Graphic design, web and multimedia design, eBook programming (XHTML, CSS).",
+  "disenador_grafico_industrial": "Graphic-Industrial Designer",
+  "descripcion_industrial": "Graphic design, web and multimedia design, 3D design and modeling.",
+  "disenador_grafico": "Graphic Designer",
+  "descripcion_grafico": "Graphic design, web and multimedia design.",
+
+  "habilidades_tecnicas": "Technical Skills",
+  "lenguajes": "Programming Languages",
+
+  "copyright": "All rights reserved."
+}

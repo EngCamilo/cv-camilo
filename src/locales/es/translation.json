@@ -1,0 +1,45 @@
+{
+  "cerrar": "Cerrar",
+  "titulo_profesional": "Diseñador Gráfico / Ing. de Software",
+  "presente": "Presente",
+  "meses": "Meses",
+  
+  "perfil_titulo": "Perfil",
+  "perfil_parrafo1": "Profesional en transición al sector tecnológico, con más de 10 años de experiencia en diseño editorial y gestión de proyectos digitales en el ámbito académico. Actualmente CEO de una agencia especializada en producción editorial digital, donde he liderado el desarrollo de soluciones tecnológicas a medida para instituciones de educación superior.",
+  "perfil_parrafo2": "Me encuentro cursando el séptimo semestre de Ingeniería de Software, carrera que complementa mi experiencia con sólidos fundamentos en programación, arquitectura de software y desarrollo web. Esta combinación me permite abordar proyectos con una visión integral que une experiencia de usuario, diseño funcional y robustez técnica.",
+  "perfil_parrafo3": "Poseo habilidades prácticas en desarrollo frontend y backend, manejo de herramientas modernas como React, TailwindCSS, Git y metodologías ágiles. Me interesa integrarme a equipos de desarrollo donde pueda aportar mi capacidad de liderazgo, pensamiento creativo y enfoque orientado a soluciones tecnológicas escalables.",
+  "informacion_personal": "Información personal",
+  "documento": "Documento de identidad",
+  "nacimiento": "Fecha de nacimiento",
+  "fecha_nacimiento": "16 de diciembre de 1991",
+  "lugar": "Lugar de nacimiento",
+  "estado_civil": "Estado civil",
+  "estado_civil_valor": "Casado",
+  "direccion": "Dirección",
+  "telefonos": "Teléfonos",
+  "email": "Email",
+  
+  "porque_elegirme": "¿Por qué elegirme?",
+  "oferta_valorTit": "Mi oferta de valor",
+  "oferta_valor": "Con más de 10 años liderando proyectos editoriales y tecnológicos, aporto una visión estratégica que combina creatividad, gestión y desarrollo de software. Mi experiencia como CEO de una agencia digital en el sector académico me ha permitido transformar ideas complejas en soluciones innovadoras que generan impacto real.\n\nActualmente, cursando Ingeniería de Software, impulso mi perfil hacia el desarrollo tecnológico con sólidos conocimientos en programación, arquitectura y metodologías ágiles. Me apasiona crear productos tecnológicos de alto valor, explorar nuevas tendencias y aprender continuamente para mantenerme a la vanguardia. Si buscas un profesional que conecte diseño, tecnología e innovación con una fuerte orientación a resultados, puedo aportar una diferencia significativa a tu equipo.",
+  
+  "educacion": "Educación",
+  "ingenieria_software": "Ingeniería de Software",
+  "comunicacion_grafica": "Comunicación Gráfica",
+  "estudios_secundarios": "Estudios secundarios",
+  "certificaciones": "Certificaciones",
+  
+  "experiencia": "Experiencia",
+  "descripcion_ceo": "Gestión de proyectos para instituciones de educación superior. Desarrollo de piezas gráficas, diseño web y multimedia, programación de libros electrónicos (XHTML, CSS).",
+  "disenador_grafico_editorial": "Diseñador Gráfico-Editorial",
+  "descripcion_editorial": "Desarrollo de piezas gráficas, diseño web y multimedia, programación de libros electrónicos (XHTML, CSS).",
+  "disenador_grafico_industrial": "Diseñador Gráfico-Industrial",
+  "descripcion_industrial": "Desarrollo de piezas gráficas, diseño web y multimedia, diseño y modelado 3D.",
+  "disenador_grafico": "Diseñador Gráfico",
+  "descripcion_grafico": "Desarrollo de piezas gráficas, diseño web y multimedia.",
+
+  "habilidades_tecnicas": "Habilidades técnicas",
+  "lenguajes": "Lenguajes de programación",
+
+  "copyright": "Todos los derechos reservados."
+}

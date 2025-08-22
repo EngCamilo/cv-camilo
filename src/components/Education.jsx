@@ -1,10 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Education() {
+  const { t } = useTranslation();
+  
   const itemsedu = [
-    { major: 'Ingeniería de Software', university: 'Institución Universitaria de Colombia', years: '2023-2026' },
-    { major: 'Comunicación Gráfica', university: 'Corporación Universitaria Minuto de Dios', years: '2009-2012' },
-    { major: 'Estudios secundarios', university: 'Colegio Marco Fidel Suarez', years: '2008' },
+    { major: t('ingenieria_software'), university: 'Institución Universitaria de Colombia', years: '2023-2026' },
+    { major: t('comunicacion_grafica'), university: 'Corporación Universitaria Minuto de Dios', years: '2009-2012' },
+    { major: t('estudios_secundarios'), university: 'Colegio Marco Fidel Suarez', years: '2008' },
   ];
   const itemscert = [
     { major: 'Operating Systems Basics', university: 'CISCO', years: 'Nov - 2024' },
@@ -13,7 +16,7 @@ export default function Education() {
 
   return (
     <section className="my-10">
-      <h2>Educación</h2>
+      <h2>{t('educacion')}</h2>
       <ul className="space-y-4 mb-8">
         {itemsedu.map((edu, index) => (
           <li key={index} className="border-l-4 border-gray-400 pl-4">
@@ -22,7 +25,7 @@ export default function Education() {
           </li>
         ))}
       </ul>
-      <h3 className="text-xl font-bold mb-4 text-gray-600">Certificaciones</h3>
+      <h3 className="text-xl font-bold mb-4 text-gray-600">{t('certificaciones')}</h3>
       <ul className="space-y-4">
         {itemscert.map((edu, index) => (
           <li key={index} className="border-l-4 border-gray-400 pl-4">

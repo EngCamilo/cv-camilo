@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Skills() {
+  const { t } = useTranslation();
+  
   const skillsu = [
     { name: 'Photoshop', level: 90 },
     { name: 'Illustrator', level: 90 },
@@ -32,7 +35,7 @@ export default function Skills() {
 
   return (
     <section className="my-10">
-      <h2>Habilidades Técnicas</h2>
+      <h2>{t('habilidades_tecnicas')}</h2>
       <h3 className="text-xl font-bold mb-4 text-gray-600">UI / UX</h3>
         <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsu.map((skill, index) => (
@@ -123,7 +126,7 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <h3 className="text-xl font-bold mb-4 text-gray-600">Lenguajes</h3>
+        <h3 className="text-xl font-bold mb-4 text-gray-600">{t('lenguajes')}</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {skillsl.map((skill, index) => (
             <div key={index} className="text-center">
