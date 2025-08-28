@@ -16,7 +16,7 @@ Actualmente, cursando Ingeniería de Software, impulso mi perfil hacia el desarr
         onClick={() => setIsOpen(true)}
         className="inline-flex items-center justify-center gap-2 px-5 py-2 border border-gray-700 text-gray-800 font-semibold rounded-full shadow-sm hover:bg-gray-100 transform hover:scale-105 transition duration-300 animate-pulse"
       >
-        <Star className="w-4 h-4 text-yellow-500 transform transition duration-300 hover:rotate-12" />
+        <Star className="w-4 h-4 text-yellow-per1 transform transition duration-300 hover:rotate-12" />
         {t('porque_elegirme')}
       </button>
 

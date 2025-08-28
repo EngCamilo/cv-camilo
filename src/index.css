@@ -8,6 +8,6 @@ body {
 
 @layer components{
   h2{
-    @apply text-2xl font-bold mb-4 tracking-widest underline decoration-yellow-500 decoration-2 underline-offset-8;
+    @apply text-2xl font-bold mb-4 tracking-widest underline decoration-yellow-per1 decoration-2 underline-offset-8;
   }
 }

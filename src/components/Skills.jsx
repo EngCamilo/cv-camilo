@@ -40,7 +40,7 @@ export default function Skills() {
         <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsu.map((skill, index) => (
             <div key={index} className="text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-500" viewBox="0 0 36 36">
+              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
                   d="M18 2.0845
@@ -70,7 +70,7 @@ export default function Skills() {
         <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsf.map((skill, index) => (
             <div key={index} className="text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-500" viewBox="0 0 36 36">
+              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
                   d="M18 2.0845
@@ -100,7 +100,7 @@ export default function Skills() {
         <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsb.map((skill, index) => (
             <div key={index} className="text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-500" viewBox="0 0 36 36">
+              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
                   d="M18 2.0845
@@ -130,7 +130,7 @@ export default function Skills() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {skillsl.map((skill, index) => (
             <div key={index} className="text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-500" viewBox="0 0 36 36">
+              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
                   d="M18 2.0845
