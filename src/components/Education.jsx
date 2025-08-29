@@ -10,6 +10,7 @@ export default function Education() {
     { major: t('estudios_secundarios'), university: 'Colegio Marco Fidel Suarez', years: '2008' },
   ];
   const itemscert = [
+    { major: 'Project Management and Fundamentals of Agile Methodology', university: 'Santander Open Academy', years: 'Ago - 2025' },
     { major: 'Operating Systems Basics', university: 'CISCO', years: 'Nov - 2024' },
     { major: 'JavaScript Essentials 1', university: 'CISCO', years: 'Feb - 2024' },
   ];
