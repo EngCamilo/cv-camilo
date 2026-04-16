@@ -21,15 +21,20 @@ export default function ContactBar() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row xl:flex-wrap justify-center md:justify-between items-center gap-2 xl:gap-4 text-xs text-gray-700">
         <div className="flex items-center gap-2 xl:basis-2/4">
           <LanguageSelector />
-          <button
-            type="button"
-            onClick={handleExportPdf}
-            className="cv-print-trigger inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-1 text-sm text-gray-800 shadow-sm transition duration-300 hover:border-gray-500 hover:text-slate-600"
-            aria-label={t('descargar_cv_pdf')}
-          >
-            <FileText className="w-4 h-4 text-yellow-600" />
-            <span>{t('ver_descargar_cv')}</span>
-          </button>
+          <div className="cv-tooltip-wrapper relative inline-flex">
+            <button
+              type="button"
+              onClick={handleExportPdf}
+              className="cv-print-trigger inline-flex items-center justify-center rounded-full border border-gray-300 bg-white p-2 text-sm text-gray-800 shadow-sm transition duration-300 hover:border-gray-500 hover:text-slate-600"
+              aria-label={t('descargar_cv_pdf')}
+              title={t('descargar_cv_pdf')}
+            >
+              <FileText className="w-4 h-4 text-yellow-600" />
+            </button>
+            <span className="cv-tooltip pointer-events-none absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-800 px-2 py-1 text-[11px] text-white opacity-0 shadow-md transition-opacity duration-200">
+              {t('descargar_cv_pdf')}
+            </span>
+          </div>
           <MapPin className="w-4 h-4 text-yellow-600" />
           <span>Madrid, Colombia</span>
         </div>

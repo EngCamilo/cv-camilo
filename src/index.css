@@ -12,6 +12,11 @@ body {
   }
 }
 
+.cv-tooltip-wrapper:hover .cv-tooltip,
+.cv-tooltip-wrapper:focus-within .cv-tooltip {
+  opacity: 1;
+}
+
 @media print {
   @page {
     size: A4;
@@ -54,6 +59,14 @@ body {
 
   .cv-print-trigger {
     display: none;
+  }
+
+  .cv-tooltip {
+    display: none;
+  }
+
+  .cv-print-socials {
+    display: block !important;
   }
 
   .cv-document {
