@@ -6,19 +6,22 @@ export default function ValorPopup() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
-  const ofertaValor = `Con más de 10 años liderando proyectos editoriales y tecnológicos, aporto una visión estratégica que combina creatividad, gestión y desarrollo de software. Mi experiencia como CEO de una agencia digital en el sector académico me ha permitido transformar ideas complejas en soluciones innovadoras que generan impacto real.
-
-Actualmente, cursando Ingeniería de Software, impulso mi perfil hacia el desarrollo tecnológico con sólidos conocimientos en programación, arquitectura y metodologías ágiles. Me apasiona crear productos tecnológicos de alto valor, explorar nuevas tendencias y aprender continuamente para mantenerme a la vanguardia. Si buscas un profesional que conecte diseño, tecnología e innovación con una fuerte orientación a resultados, puedo aportar una diferencia significativa a tu equipo.`;
-
   return (
-    <div className="my-8 text-center">
+    <div className="cv-section my-8 text-center">
       <button
         onClick={() => setIsOpen(true)}
-        className="inline-flex items-center justify-center gap-2 px-5 py-2 border border-gray-700 text-gray-800 font-semibold rounded-full shadow-sm hover:bg-gray-100 transform hover:scale-105 transition duration-300 animate-pulse"
+        className="cv-screen-only inline-flex items-center justify-center gap-2 px-5 py-2 border border-gray-700 text-gray-800 font-semibold rounded-full shadow-sm hover:bg-gray-100 transform hover:scale-105 transition duration-300 animate-pulse"
       >
         <Star className="w-4 h-4 text-yellow-per1 transform transition duration-300 hover:rotate-12" />
         {t('porque_elegirme')}
       </button>
+
+      <section className="cv-print-value hidden text-left">
+        <div className="cv-card rounded-lg border border-gray-300 bg-white p-6">
+          <h2>{t('oferta_valorTit')}</h2>
+          <p className="text-gray-700 whitespace-pre-line text-sm md:text-base">{t('oferta_valor')}</p>
+        </div>
+      </section>
 
       {/* Modal */}
       {isOpen && (

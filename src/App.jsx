@@ -10,19 +10,19 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 font-sans">
+    <div className="cv-document min-h-screen bg-gray-100 text-gray-800 font-sans">
       <ContactBar />
       <Header />
-      <main className="w-full max-w-7xl mx-auto px-6 md:px-10 lg:px-12 xl:py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <section className="col-span-1 md:col-span-2 space-y-8">
+      <main className="cv-main w-full max-w-7xl mx-auto px-6 md:px-10 lg:px-12 xl:py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="cv-full-width col-span-1 md:col-span-2 space-y-8">
           <SobreMi />
           <ValorPopup />
         </section>
-        <section className="space-y-8">
+        <section className="cv-column cv-page-two space-y-8">
           <Education />
           <Experience />
         </section>
-        <section>
+        <section className="cv-column cv-page-three">
           <Skills />
         </section>
       </main>

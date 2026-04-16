@@ -6,9 +6,9 @@ export default function Header() {
   const { t } = useTranslation();
   
   return (
-    <header>
+    <header className="cv-header">
       <div className="relative mt-32 mx-auto z-50 md:mt-14">
-        <div className="bg-grey-per1 text-white flex flex-col md:flex-row p-6 items-center md:items-start justify-between gap-4 h-auto md:h-48">
+        <div className="cv-header-banner bg-grey-per1 text-white flex flex-col md:flex-row p-6 items-center md:items-start justify-between gap-4 h-auto md:h-48">
           <div className='hidden md:block md:w-1/2'>
             
           </div>

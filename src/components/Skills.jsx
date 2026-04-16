@@ -34,12 +34,12 @@ export default function Skills() {
   ];
 
   return (
-    <section className="my-10">
+    <section className="cv-section my-10">
       <h2>{t('habilidades_tecnicas')}</h2>
       <h3 className="text-xl font-bold mb-4 text-gray-600">UI / UX</h3>
-        <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
+        <div className="cv-skill-grid grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsu.map((skill, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="cv-skill-card text-center">
               <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
@@ -67,9 +67,9 @@ export default function Skills() {
           ))}
         </div>
       <h3 className="text-xl font-bold mb-4 text-gray-600">Fronent</h3>
-        <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
+        <div className="cv-skill-grid grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsf.map((skill, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="cv-skill-card text-center">
               <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
@@ -97,9 +97,9 @@ export default function Skills() {
           ))}
         </div>
         <h3 className="text-xl font-bold mb-4 text-gray-600">Backend</h3>
-        <div className="grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
+        <div className="cv-skill-grid grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
           {skillsb.map((skill, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="cv-skill-card text-center">
               <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"
@@ -127,9 +127,9 @@ export default function Skills() {
           ))}
         </div>
         <h3 className="text-xl font-bold mb-4 text-gray-600">{t('lenguajes')}</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="cv-skill-grid grid grid-cols-2 md:grid-cols-4 gap-6">
           {skillsl.map((skill, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="cv-skill-card text-center">
               <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
                 <path
                   className="text-gray-300"

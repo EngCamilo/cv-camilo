@@ -6,7 +6,7 @@
   
   "perfil_titulo": "Perfil",
   "perfil_parrafo1": "Profesional en transición al sector tecnológico, con más de 10 años de experiencia en diseño editorial y gestión de proyectos digitales en el ámbito académico. Actualmente CEO de una agencia especializada en producción editorial digital, donde he liderado el desarrollo de soluciones tecnológicas a medida para instituciones de educación superior.",
-  "perfil_parrafo2": "Me encuentro cursando el séptimo semestre de Ingeniería de Software, carrera que complementa mi experiencia con sólidos fundamentos en programación, arquitectura de software y desarrollo web. Esta combinación me permite abordar proyectos con una visión integral que une experiencia de usuario, diseño funcional y robustez técnica.",
+  "perfil_parrafo2": "Me encuentro cursando el noveno semestre de Ingeniería de Software, carrera que complementa mi experiencia con sólidos fundamentos en programación, arquitectura de software y desarrollo web. Esta combinación me permite abordar proyectos con una visión integral que une experiencia de usuario, diseño funcional y robustez técnica.",
   "perfil_parrafo3": "Poseo habilidades prácticas en desarrollo frontend y backend, manejo de herramientas modernas como React, TailwindCSS, Git y metodologías ágiles. Me interesa integrarme a equipos de desarrollo donde pueda aportar mi capacidad de liderazgo, pensamiento creativo y enfoque orientado a soluciones tecnológicas escalables.",
   "informacion_personal": "Información personal",
   "documento": "Documento de identidad",
@@ -25,11 +25,14 @@
   
   "educacion": "Educación",
   "ingenieria_software": "Ingeniería de Software",
+  "diplomado_ciberseguridad": "Diplomado en ciberseguridad",
   "comunicacion_grafica": "Comunicación Gráfica",
   "estudios_secundarios": "Estudios secundarios",
   "certificaciones": "Certificaciones",
   
   "experiencia": "Experiencia",
+  "analista_ciber_i": "Analista Ciber I",
+  "descripcion_analista_ciber_i": "Monitoreo constante de infraestructura TI mediante herramientas SOC/NOC, enfocado en la detección, análisis y gestión de alertas de seguridad y disponibilidad.",
   "descripcion_ceo": "Gestión de proyectos para instituciones de educación superior. Desarrollo de piezas gráficas, diseño web y multimedia, programación de libros electrónicos (XHTML, CSS).",
   "disenador_grafico_editorial": "Diseñador Gráfico-Editorial",
   "descripcion_editorial": "Desarrollo de piezas gráficas, diseño web y multimedia, programación de libros electrónicos (XHTML, CSS).",
@@ -40,6 +43,8 @@
 
   "habilidades_tecnicas": "Habilidades técnicas",
   "lenguajes": "Lenguajes de programación",
+  "ver_descargar_cv": "Ver / Descargar CV",
+  "descargar_cv_pdf": "Ver o descargar el CV en PDF",
 
   "copyright": "Todos los derechos reservados."
 }

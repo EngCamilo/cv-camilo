@@ -6,7 +6,7 @@
   
   "perfil_titulo": "Profile",
   "perfil_parrafo1": "Professional in transition to the tech sector, with over 10 years of experience in editorial design and digital project management in the academic field. Currently CEO of a digital editorial production agency, where I have led the development of custom technological solutions for higher education institutions.",
-  "perfil_parrafo2": "I am currently studying Software Engineering (7th semester), a program that complements my background with strong foundations in programming, software architecture, and web development. This combination allows me to approach projects with a holistic vision that unites user experience, functional design, and technical robustness.",
+  "perfil_parrafo2": "I am currently studying Software Engineering (9th semester), a program that complements my background with strong foundations in programming, software architecture, and web development. This combination allows me to approach projects with a holistic vision that unites user experience, functional design, and technical robustness.",
   "perfil_parrafo3": "I have practical skills in both frontend and backend development, working with modern tools like React, TailwindCSS, Git, and agile methodologies. I am eager to join development teams where I can contribute my leadership, creative thinking, and focus on building scalable, high-value technology solutions.",
   
   "informacion_personal": "Personal Information",
@@ -26,11 +26,14 @@
   
   "educacion": "Education",
   "ingenieria_software": "Software Engineering",
+  "diplomado_ciberseguridad": "Diploma in Cybersecurity",
   "comunicacion_grafica": "Graphic Communication",
   "estudios_secundarios": "High School",
   "certificaciones": "Certifications",
   
   "experiencia": "Experience",
+  "analista_ciber_i": "Cyber Analyst I",
+  "descripcion_analista_ciber_i": "Continuous monitoring of IT infrastructure through SOC/NOC tools, focused on the detection, analysis, and management of security and availability alerts.",
   "descripcion_ceo": "Project management for higher education institutions. Graphic design, web and multimedia design, eBook programming (XHTML, CSS).",
   "disenador_grafico_editorial": "Graphic-Editorial Designer",
   "descripcion_editorial": "Graphic design, web and multimedia design, eBook programming (XHTML, CSS).",
@@ -41,6 +44,8 @@
 
   "habilidades_tecnicas": "Technical Skills",
   "lenguajes": "Programming Languages",
+  "ver_descargar_cv": "View / Download CV",
+  "descargar_cv_pdf": "View or download the CV as PDF",
 
   "copyright": "All rights reserved."
 }

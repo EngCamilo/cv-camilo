@@ -6,6 +6,7 @@ export default function Education() {
   
   const itemsedu = [
     { major: t('ingenieria_software'), university: 'Institución Universitaria de Colombia', years: '2023-2026' },
+    { major: t('diplomado_ciberseguridad'), university: 'Institución Universitaria de Colombia', years: '2025-2' },
     { major: t('comunicacion_grafica'), university: 'Corporación Universitaria Minuto de Dios', years: '2009-2012' },
     { major: t('estudios_secundarios'), university: 'Colegio Marco Fidel Suarez', years: '2008' },
   ];
@@ -16,11 +17,11 @@ export default function Education() {
   ];
 
   return (
-    <section className="my-10">
+    <section className="cv-section my-10">
       <h2>{t('educacion')}</h2>
       <ul className="space-y-4 mb-8">
         {itemsedu.map((edu, index) => (
-          <li key={index} className="border-l-4 border-gray-400 pl-4">
+          <li key={index} className="cv-item border-l-4 border-gray-400 pl-4">
             <h3 className="text-xl font-semibold">{edu.major}</h3>
             <p>{edu.university} | <span className='font-extralight'>{edu.years}</span></p>
           </li>
@@ -29,7 +30,7 @@ export default function Education() {
       <h3 className="text-xl font-bold mb-4 text-gray-600">{t('certificaciones')}</h3>
       <ul className="space-y-4">
         {itemscert.map((edu, index) => (
-          <li key={index} className="border-l-4 border-gray-400 pl-4">
+          <li key={index} className="cv-item border-l-4 border-gray-400 pl-4">
             <h3 className="text-xl font-semibold">{edu.major}</h3>
             <p>{edu.university} | <span className='font-extralight'>{edu.years}</span></p>
           </li>

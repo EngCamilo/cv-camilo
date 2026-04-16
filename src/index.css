@@ -11,3 +11,151 @@ body {
     @apply text-2xl font-bold mb-4 tracking-widest underline decoration-yellow-per1 decoration-2 underline-offset-8;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  html {
+    font-size: 11px;
+  }
+
+  body {
+    background: white;
+    color: #111827;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #root {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    page-break-inside: avoid;
+  }
+
+  .contact-bar {
+    display: none !important;
+  }
+
+  .cv-print-trigger {
+    display: none;
+  }
+
+  .cv-document {
+    min-height: auto;
+    background: white;
+  }
+
+  .cv-main {
+    display: block;
+    max-width: none;
+    padding: 0;
+  }
+
+  .cv-full-width,
+  .cv-column,
+  .cv-section,
+  .cv-card,
+  .cv-item,
+  .cv-skill-card,
+  .cv-profile-image,
+  .cv-header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-header {
+    margin-bottom: 1rem;
+  }
+
+  .cv-header .relative {
+    margin-top: 0;
+  }
+
+  .cv-header-banner {
+    background: #1f2937 !important;
+    color: white !important;
+    min-height: auto;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .cv-profile-image {
+    position: static;
+    transform: none;
+    left: auto;
+    top: auto;
+    margin: 0 auto;
+  }
+
+  .cv-profile-image > div {
+    width: 8rem;
+    height: 8rem;
+    box-shadow: none;
+  }
+
+  .cv-about {
+    background: white;
+    padding: 0;
+    margin-top: 0;
+    gap: 1rem;
+  }
+
+  .cv-card {
+    box-shadow: none;
+    border: 1px solid #d1d5db;
+    padding: 1rem;
+  }
+
+  .cv-section {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .cv-item {
+    margin-bottom: 0.75rem;
+  }
+
+  .cv-skill-grid {
+    gap: 0.75rem;
+  }
+
+  .cv-skill-card svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .cv-print-value {
+    display: none !important;
+  }
+
+  .cv-screen-only,
+  .cv-footer {
+    display: none !important;
+  }
+
+  .cv-page-two {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .cv-page-three {
+    break-before: page;
+    page-break-before: always;
+  }
+}

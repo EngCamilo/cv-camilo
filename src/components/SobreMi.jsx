@@ -4,15 +4,15 @@ import { useTranslation } from 'react-i18next';
 export default function SobreMi() {
   const { t } = useTranslation();
   return (
-    <section className="w-full my-10 bg-gray-200 p-5 md:p-8 rounded-xl flex flex-wrap gap-8 xl:flex-nowrap">
-        <div className="bg-white shadow-md p-6 rounded-lg basis-full xl:basis-2/3">
+    <section className="cv-section cv-about w-full my-10 bg-gray-200 p-5 md:p-8 rounded-xl flex flex-wrap gap-8 xl:flex-nowrap">
+        <div className="cv-card bg-white shadow-md p-6 rounded-lg basis-full xl:basis-2/3">
           <h2>{t('perfil_titulo')}</h2>
           <p className="mb-3 text-sm md:text-base">{t('perfil_parrafo1')}</p>
           <p className="mb-3 text-sm md:text-base">{t('perfil_parrafo2')}</p>
           <p className="mb-3 text-sm md:text-base">{t('perfil_parrafo3')}</p>
         </div>
 
-        <div className="bg-white shadow-md p-6 rounded-lg basis-full xl:basis-1/3 text-xs">
+        <div className="cv-card bg-white shadow-md p-6 rounded-lg basis-full xl:basis-1/3 text-xs">
           <h2>{t('informacion_personal')}</h2>
           <p className="mb-3"><span className="uppercase">{t('documento')}</span><br /><b>1.031.135.635</b></p>
           <p className="mb-3"><span className="uppercase">{t('nacimiento')}</span><br /><b>{t('fecha_nacimiento')}</b></p>
