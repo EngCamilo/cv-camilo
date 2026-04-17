@@ -17,16 +17,16 @@ export default function Header() {
           <div className='w-full md:w-1/2 text-center md:text-left z-10'>
             <h1 className="text-4xl md:text-5xl font-light tracking-wider mb-2">Camilo <br/> <span className='font-bold underline decoration-yellow-per1 decoration-2 underline-offset-8'>Contreras</span></h1>
             <p className="text-base font-thin">{t('titulo_profesional')}</p>
-            <div className="cv-print-socials hidden mt-4 space-y-2 text-sm">
-              <div className="flex items-center justify-center gap-2 md:justify-start">
+            <div className="cv-print-socials hidden mt-4">
+              <div className="cv-print-social-item flex items-center justify-center gap-2 md:justify-start">
                 <Globe className="h-4 w-4 text-yellow-per1" />
-                <span>engcamilo.github.io/cv-camilo</span>
+                <span>engcamilo.github.io</span>
               </div>
-              <div className="flex items-center justify-center gap-2 md:justify-start">
+              <div className="cv-print-social-item flex items-center justify-center gap-2 md:justify-start">
                 <Linkedin className="h-4 w-4 text-yellow-per1" />
-                <span>linkedin.com/in/camilo-contreras-betancourt</span>
+                <span>LinkedIn</span>
               </div>
-              <div className="flex items-center justify-center gap-2 md:justify-start">
+              <div className="cv-print-social-item flex items-center justify-center gap-2 md:justify-start">
                 <Github className="h-4 w-4 text-yellow-per1" />
                 <span>github.com/EngCamilo</span>
               </div>
