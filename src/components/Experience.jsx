@@ -1,5 +1,7 @@
 import React from 'react';
+import { Briefcase } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import SectionTitle from './SectionTitle';
 
 export default function Experience() {
   const { t } = useTranslation();
@@ -13,15 +15,17 @@ export default function Experience() {
   ];
 
   return (
-    <section className="cv-section my-10">
-      <h2>{t('experiencia')}</h2>
+    <section className="cv-section rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8 dark:border-slate-800 dark:bg-slate-900">
+      <SectionTitle icon={Briefcase} title={t('experiencia')} eyebrow={t('trayectoria_profesional')} />
       <ul className="space-y-4">
         {jobs.map((job, index) => (
-          <li key={index} className="cv-item border-l-4 border-gray-400 pl-4">
-            <h3 className="text-xl font-semibold">{job.company}</h3>
-            <h3 className="text-xl font-light">{job.role}</h3>
-            <p className="text-sm font-extralight">{job.years}</p>
-            <p>{job.desc}</p>
+          <li key={index} className="cv-item rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-slate-700 dark:bg-slate-800">
+            <div className="mb-2">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{job.company}</h3>
+              <h4 className="text-base font-medium text-slate-600 dark:text-slate-300">{job.role}</h4>
+            </div>
+            <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">{job.desc}</p>
+            <p className="mt-3 inline-flex rounded-full border border-slate-300 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:border-slate-600 dark:text-slate-300">{job.years}</p>
           </li>
         ))}
       </ul>

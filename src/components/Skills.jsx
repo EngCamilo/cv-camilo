@@ -1,161 +1,42 @@
 import React from 'react';
+import { Blocks } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import SectionTitle from './SectionTitle';
 
 export default function Skills() {
   const { t } = useTranslation();
   
-  const skillsu = [
-    { name: 'Photoshop', level: 90 },
-    { name: 'Illustrator', level: 90 },
-    { name: 'Framer', level: 80 },
-    { name: 'Figma', level: 75 },
-  ];
-  const skillsf = [
-    { name: 'HTML5', level: 90 },
-    { name: 'JavaScript', level: 80 },
-    { name: 'React', level: 70 },
-    { name: 'TailwindCSS', level: 65 },
-  ];
-  const skillsb = [
-    { name: 'Django', level: 70 },
-    { name: 'Node.js/Express.js', level: 70 },
-    { name: '.NET Core', level: 70 },
-    { name: '.NET Web API', level: 65 },
-    { name: 'PostgreSQL', level: 75 },
-    { name: 'MySQL', level: 80 },
-    { name: 'SQL Server', level: 75 },
-    { name: 'Docker', level: 65 },
-  ];
-  const skillsl = [
-    { name: 'JAVA', level: 60 },
-    { name: 'Python', level:75 },
-    { name: 'C#', level: 70 },
-    { name: 'PHP', level: 70 },
+  const groups = [
+    { title: t('categoria_backend'), color: 'bg-emerald-500 text-white', items: ['ASP.NET Core', '.NET Web API', 'Django', 'Express.js', 'REST APIs'] },
+    { title: t('categoria_frontend'), color: 'bg-sky-500 text-white', items: ['React', 'HTML5', 'CSS3', 'TailwindCSS', 'JavaScript'] },
+    { title: t('lenguajes'), color: 'bg-amber-500 text-slate-950', items: ['C#', 'Python', 'JavaScript', 'Java', 'PHP'] },
+    { title: t('categoria_bases_datos'), color: 'bg-violet-500 text-white', items: ['PostgreSQL', 'SQL Server', 'MySQL'] },
+    { title: t('categoria_devops'), color: 'bg-rose-500 text-white', items: ['Docker', 'Git', 'GitHub', 'CI/CD'] },
+    { title: t('categoria_cms_ecommerce'), color: 'bg-indigo-500 text-white', items: ['WordPress', 'WooCommerce', 'REST API Integrations', 'DRM Services', 'Payment Gateways'] },
+    { title: t('categoria_diseno'), color: 'bg-slate-500 text-white', items: ['Figma', 'Framer', 'Photoshop', 'Illustrator'] },
   ];
 
   return (
-    <section className="cv-section my-10">
-      <h2>{t('habilidades_tecnicas')}</h2>
-      <h3 className="text-xl font-bold mb-4 text-gray-600">UI / UX</h3>
-        <div className="cv-skill-grid grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
-          {skillsu.map((skill, index) => (
-            <div key={index} className="cv-skill-card text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
-                <path
-                  className="text-gray-300"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                />
-                <path
-                  className="text-blue-500"
-                  d={`M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeDasharray={`${skill.level}, 100`}
-                  strokeWidth="2"
-                />
-              </svg>
-              <p className="mt-2 font-semibold">{skill.name}</p>
-              <p className="text-sm">{skill.level}%</p>
+    <section className="cv-section rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8 dark:border-slate-800 dark:bg-slate-900">
+      <SectionTitle icon={Blocks} title={t('habilidades_tecnicas')} eyebrow={t('stack_tecnologico')} />
+      <div className="grid gap-4">
+        {groups.map((group) => (
+          <div key={group.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800">
+            <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-slate-300">{group.title}</h3>
+            <div className="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <div
+                  key={item}
+                  className={`inline-flex items-center px-4 py-2 pr-8 text-xs font-semibold tracking-[0.08em] shadow-sm ${group.color}`}
+                  style={{ clipPath: 'polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)' }}
+                >
+                  {item}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      <h3 className="text-xl font-bold mb-4 text-gray-600">Fronent</h3>
-        <div className="cv-skill-grid grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
-          {skillsf.map((skill, index) => (
-            <div key={index} className="cv-skill-card text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
-                <path
-                  className="text-gray-300"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                />
-                <path
-                  className="text-green-500"
-                  d={`M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeDasharray={`${skill.level}, 100`}
-                  strokeWidth="2"
-                />
-              </svg>
-              <p className="mt-2 font-semibold">{skill.name}</p>
-              <p className="text-sm">{skill.level}%</p>
-            </div>
-          ))}
-        </div>
-        <h3 className="text-xl font-bold mb-4 text-gray-600">Backend</h3>
-        <div className="cv-skill-grid grid grid-cols-2 mb-5 md:grid-cols-4 gap-6">
-          {skillsb.map((skill, index) => (
-            <div key={index} className="cv-skill-card text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
-                <path
-                  className="text-gray-300"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                />
-                <path
-                  className="text-violet-500"
-                  d={`M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeDasharray={`${skill.level}, 100`}
-                  strokeWidth="2"
-                />
-              </svg>
-              <p className="mt-2 font-semibold">{skill.name}</p>
-              <p className="text-sm">{skill.level}%</p>
-            </div>
-          ))}
-        </div>
-        <h3 className="text-xl font-bold mb-4 text-gray-600">{t('lenguajes')}</h3>
-        <div className="cv-skill-grid grid grid-cols-2 md:grid-cols-4 gap-6">
-          {skillsl.map((skill, index) => (
-            <div key={index} className="cv-skill-card text-center">
-              <svg className="mx-auto w-20 h-20 text-yellow-per1" viewBox="0 0 36 36">
-                <path
-                  className="text-gray-300"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                />
-                <path
-                  className="text-cyan-500"
-                  d={`M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeDasharray={`${skill.level}, 100`}
-                  strokeWidth="2"
-                />
-              </svg>
-              <p className="mt-2 font-semibold">{skill.name}</p>
-              <p className="text-sm">{skill.level}%</p>
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

@@ -6,6 +6,10 @@ body {
   @apply bg-gray-100;
 }
 
+html.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
 @layer components{
   h2{
     @apply text-2xl font-bold mb-4 tracking-widest underline decoration-yellow-per1 decoration-2 underline-offset-8;
@@ -13,7 +17,7 @@ body {
 }
 
 .cv-tooltip-wrapper:hover .cv-tooltip,
-.cv-tooltip-wrapper:focus-within .cv-tooltip {
+  .cv-tooltip-wrapper:focus-within .cv-tooltip {
   opacity: 1;
 }
 
@@ -65,6 +69,15 @@ body {
     display: none;
   }
 
+  .cv-tabs-nav {
+    display: none !important;
+  }
+
+  .cv-tab-panel {
+    display: block !important;
+    margin-bottom: 1rem;
+  }
+
   .cv-print-socials {
     display: flex !important;
     flex-wrap: wrap;
@@ -87,6 +100,14 @@ body {
     display: block;
     max-width: none;
     padding: 0;
+  }
+
+  .cv-print-stack {
+    display: block !important;
+  }
+
+  .cv-print-stack > * + * {
+    margin-top: 1rem;
   }
 
   .cv-full-width,
@@ -126,8 +147,8 @@ body {
   }
 
   .cv-profile-image > div {
-    width: 8rem;
-    height: 8rem;
+    width: 10.5rem;
+    height: 10.5rem;
     box-shadow: none;
   }
 
