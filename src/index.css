@@ -10,6 +10,21 @@ html.dark body {
   @apply bg-slate-950 text-slate-100;
 }
 
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+select,
+option,
+[contenteditable="true"],
+[data-allow-copy="true"] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 @layer components{
   h2{
     @apply text-2xl font-bold mb-4 tracking-widest underline decoration-yellow-per1 decoration-2 underline-offset-8;
@@ -36,6 +51,8 @@ html.dark body {
     color: #111827;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+    -webkit-user-select: text;
+    user-select: text;
   }
 
   #root {

@@ -7,8 +7,11 @@ import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import ExpandableSections from './components/ExpandableSections';
 import Footer from './components/Footer';
+import useContentProtection from './hooks/useContentProtection';
 
 export default function App() {
+  useContentProtection();
+
   const [isDarkMode, setIsDarkMode] = useState(() => {
     if (typeof window === 'undefined') return false;
     const savedTheme = window.localStorage.getItem('cv-theme');
@@ -17,6 +20,7 @@ export default function App() {
   });
 
   useEffect(() => {
+    // Persist the preferred theme and keep Tailwind's class-based dark mode in sync.
     document.documentElement.classList.toggle('dark', isDarkMode);
     window.localStorage.setItem('cv-theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);

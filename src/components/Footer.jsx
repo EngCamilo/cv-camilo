@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <footer className="cv-footer mt-10 bg-grey-per2 p-4 text-center text-xs text-white dark:border-t dark:border-slate-800 dark:bg-slate-950">
       <p>&copy; {new Date().getFullYear()} Camilo Contreras. {t('copyright')}</p>
+      <p className="mt-2 text-[11px] text-slate-300">{t('aviso_proteccion')}</p>
     </footer>
   );
 }
