@@ -7,7 +7,7 @@ export default function Experience() {
   const { t } = useTranslation();
 
   const jobs = [
-    { role: t('analista_ciber_i'), company: 'Invotecsa SAS', years: '2025 - ' + t('presente'), desc: t('descripcion_analista_ciber_i') },
+    { role: t('analista_ciber_i'), company: 'Invotecsa SAS', years: '11 ' + t('meses'), desc: t('descripcion_analista_ciber_i') },
     { role: 'CEO', company: 'Lápiz Blanco SAS', years: '2012 - ' + t('presente'), desc:t('descripcion_ceo') },
     { role: t('disenador_grafico_editorial'), company: 'Hipertexto Ltda.', years: '4 ' + t('meses'), desc: t('descripcion_editorial') },
     { role: t('disenador_grafico_industrial'), company: 'SGM Servicios Globales de Mercadeo SAS', years:  '12 ' + t('meses'), desc: t('descripcion_industrial') },

@@ -7,7 +7,7 @@ export default function Education() {
   const { t } = useTranslation();
   
   const itemsedu = [
-    { major: t('ingenieria_software'), university: 'Institución Universitaria de Colombia', years: '2023-2026', extra: t('graduacion_estimada') },
+    { major: t('ingenieria_software'), university: 'Institución Universitaria de Colombia', years: '2023-2026' },
     { major: t('diplomado_ciberseguridad'), university: 'Institución Universitaria de Colombia', years: '2025-2' },
     { major: t('comunicacion_grafica'), university: 'Corporación Universitaria Minuto de Dios', years: '2009-2012' },
     { major: t('estudios_secundarios'), university: 'Colegio Marco Fidel Suarez', years: '2008' },

@@ -12,7 +12,7 @@ CV web profesional bilingue orientado a posicionar el perfil de Camilo Contreras
 ## Funcionalidades
 
 - Experiencia bilingue `es/en`
-- Tema claro y oscuro persistente
+- Tema claro predeterminado y preferencia de tema claro/oscuro persistente
 - Exportacion a PDF con layout especifico para impresion
 - Secciones de proyectos y repositorios destacados
 - Favicon personalizado
@@ -29,7 +29,6 @@ Medidas implementadas:
 - Bloqueo de `copy`, `cut` y `selectstart` en contenido visible
 - Bloqueo de atajos comunes como `Ctrl/Cmd + C`, `S`, `U`, `A`, `Shift+Ctrl/Cmd+I`, `Shift+Ctrl/Cmd+J` y `F12`
 - Bloqueo de arrastre de imagenes
-- Marca de agua visual sobre la fotografia de perfil
 - Politicas basicas en `index.html` para `Content-Security-Policy`, `Referrer-Policy` y `X-Content-Type-Options`
 
 Limites importantes:

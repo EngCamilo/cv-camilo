@@ -15,8 +15,7 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     if (typeof window === 'undefined') return false;
     const savedTheme = window.localStorage.getItem('cv-theme');
-    if (savedTheme) return savedTheme === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return savedTheme === 'dark';
   });
 
   useEffect(() => {
