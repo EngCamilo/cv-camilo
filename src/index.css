@@ -44,11 +44,12 @@ option,
 
   html {
     font-size: 11px;
+    color-scheme: light;
   }
 
   body {
-    background: white;
-    color: #111827;
+    background: white !important;
+    color: #111827 !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
     -webkit-user-select: text;
@@ -110,7 +111,55 @@ option,
 
   .cv-document {
     min-height: auto;
-    background: white;
+    background: white !important;
+  }
+
+  /* Use solid colors in print and keep the palette independent of dark mode. */
+  .cv-document,
+  .cv-document * {
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .cv-document {
+    color: #1f2937 !important;
+  }
+
+  .cv-document .bg-white {
+    background-color: #fff !important;
+  }
+
+  .cv-document .bg-slate-50 {
+    background-color: #f8fafc !important;
+  }
+
+  .cv-document .bg-slate-900 {
+    background-color: #0f172a !important;
+  }
+
+  .cv-document .text-slate-900 {
+    color: #0f172a !important;
+  }
+
+  .cv-document .text-slate-700 {
+    color: #334155 !important;
+  }
+
+  .cv-document .text-slate-600 {
+    color: #475569 !important;
+  }
+
+  .cv-document .text-slate-500 {
+    color: #64748b !important;
+  }
+
+  .cv-document .border-slate-200 {
+    border-color: #e2e8f0 !important;
+  }
+
+  .cv-document .border-slate-300 {
+    border-color: #cbd5e1 !important;
   }
 
   .cv-main {
@@ -148,11 +197,37 @@ option,
   }
 
   .cv-header-banner {
-    background: #1f2937 !important;
-    color: white !important;
+    background: #0f172a !important;
+    color: white;
+    border: 1px solid #0f172a;
     min-height: auto;
-    padding: 1.25rem;
-    gap: 1rem;
+    padding: 5mm;
+  }
+
+  .cv-header-decoration {
+    display: none;
+  }
+
+  .cv-header-banner .cv-header-layout {
+    grid-template-columns: 58mm minmax(0, 1fr);
+    align-items: center;
+    gap: 6mm;
+    padding: 0;
+  }
+
+  .cv-header-banner h1 {
+    font-size: 28pt;
+    line-height: 1.1;
+  }
+
+  .cv-header-banner h1,
+  .cv-header-banner p {
+    text-align: left;
+  }
+
+  .cv-header-banner .flex-wrap,
+  .cv-print-socials {
+    justify-content: flex-start;
   }
 
   .cv-profile-image {
@@ -164,8 +239,8 @@ option,
   }
 
   .cv-profile-image > div {
-    width: 10.5rem;
-    height: 10.5rem;
+    width: 58mm;
+    height: 58mm;
     box-shadow: none;
   }
 

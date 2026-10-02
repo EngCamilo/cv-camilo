@@ -10,8 +10,8 @@ export default function Header() {
     <header className="cv-header">
       <div className="relative mx-auto mt-40 md:mt-10">
         <div className="cv-header-banner relative overflow-hidden rounded-[2rem] bg-slate-900 text-white shadow-2xl">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(246,203,0,0.18),transparent_28%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(30,41,59,0.92))]" />
-          <div className="relative grid gap-8 px-6 pb-10 pt-16 md:p-10 xl:grid-cols-[260px_minmax(0,760px)] xl:items-center xl:justify-center xl:px-10 xl:pb-10 xl:pt-10">
+          <div className="cv-header-decoration absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(246,203,0,0.18),transparent_28%),linear-gradient(135deg,rgba(15,23,42,0.96),rgba(30,41,59,0.92))]" />
+          <div className="cv-header-layout relative grid gap-8 px-6 pb-10 pt-16 md:p-10 xl:grid-cols-[260px_minmax(0,760px)] xl:items-center xl:justify-center xl:px-10 xl:pb-10 xl:pt-10">
             <div className="flex justify-center">
               <ProfileImage />
             </div>

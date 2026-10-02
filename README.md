@@ -14,6 +14,7 @@ CV web profesional bilingue orientado a posicionar el perfil de Camilo Contreras
 - Experiencia bilingue `es/en`
 - Tema claro predeterminado y preferencia de tema claro/oscuro persistente
 - Exportacion a PDF con layout especifico para impresion
+- PDF con colores solidos sin degradados, paleta independiente del tema y fotografia ampliada; activar la impresion de fondos para conservar los colores
 - Secciones de proyectos y repositorios destacados
 - Favicon personalizado
 - Medidas basicas de disuasion para proteger contenido visible
